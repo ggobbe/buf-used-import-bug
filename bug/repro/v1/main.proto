@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package repro.v1;
+
+import "repro/v1/opts.proto";
+import "google/protobuf/timestamp.proto"; // unused - should be flagged by IMPORT_USED, but is not
+
+option (repro.v1.label) = "test";
+
+message Msg {
+  string x = 1;
+}

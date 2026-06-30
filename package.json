@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "lint:bug": "buf lint bug",
+    "lint:valid": "buf lint valid"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "1.71.0"
+  }
+}

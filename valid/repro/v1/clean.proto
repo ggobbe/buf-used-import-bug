@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package repro.v1;
+
+import "google/protobuf/timestamp.proto"; // unused - correctly flagged by IMPORT_USED
+
+message Msg {
+  string x = 1;
+}
